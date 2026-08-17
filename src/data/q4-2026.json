@@ -1,0 +1,147 @@
+{
+  "edition": "Q4 2026",
+  "publicationDate": "2026-12-01",
+  "sampleSize": 430,
+  "methodology": "ESRE OS v2.1",
+  "partners": ["Lagos Business School"],
+  "reportPdfUrl": "https://aehi.crelligent.com/reports/aehi-q4-2026.pdf",
+  "overallScore": 44,
+  "topQuartileThreshold": 72,
+  "bottomQuartileThreshold": 32,
+  "primaryConstraintLayer": "L2",
+  "primaryConstraintPercent": 91,
+  "overallLayerScores": {
+    "l1": 5.9, "l2": 3.4, "l3": 4.8, "l4": 3.8, "l5": 5.8
+  },
+  "keyFindings": [
+    "91% of Nigerian mid-market enterprises have Operating Model as their primary OS constraint — not their market, technology, or competition.",
+    "Enterprises in the top quartile (score 72+) are 3.4× more likely to have a documented Process Library covering at least 30 critical processes.",
+    "Financial Services leads all sectors at 58/100 — 19 points above Logistics, the lowest-scoring sector in Q4 2026."
+  ],
+  "sectors": [
+    {
+      "name": "Financial Services",
+      "slug": "financial-services",
+      "score": 58,
+      "trend": 3,
+      "sampleSize": 68,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 7.1, "l2": 4.8, "l3": 6.2, "l4": 6.1, "l5": 6.9 },
+      "topQuartileScore": 79,
+      "medianScore": 57,
+      "bottomQuartileScore": 38,
+      "geographicBreakdown": { "lagos": 61, "abuja": 54, "other": 49 }
+    },
+    {
+      "name": "Technology",
+      "slug": "technology",
+      "score": 53,
+      "trend": 5,
+      "sampleSize": 72,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 7.4, "l2": 4.1, "l3": 6.8, "l4": 5.9, "l5": 4.8 },
+      "topQuartileScore": 74,
+      "medianScore": 52,
+      "bottomQuartileScore": 33,
+      "geographicBreakdown": { "lagos": 56, "abuja": 49, "other": 41 }
+    },
+    {
+      "name": "Healthcare",
+      "slug": "healthcare",
+      "score": 51,
+      "trend": 0,
+      "sampleSize": 44,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 6.2, "l2": 3.9, "l3": 4.8, "l4": 4.1, "l5": 6.8 },
+      "topQuartileScore": 71,
+      "medianScore": 50,
+      "bottomQuartileScore": 31,
+      "geographicBreakdown": { "lagos": 54, "abuja": 48, "other": 44 }
+    },
+    {
+      "name": "Professional Services",
+      "slug": "professional-services",
+      "score": 49,
+      "trend": 0,
+      "sampleSize": 38,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 6.8, "l2": 3.5, "l3": 5.1, "l4": 3.8, "l5": 5.9 },
+      "topQuartileScore": 70,
+      "medianScore": 48,
+      "bottomQuartileScore": 29,
+      "geographicBreakdown": { "lagos": 52, "abuja": 46, "other": 38 }
+    },
+    {
+      "name": "Energy / Utilities",
+      "slug": "energy-utilities",
+      "score": 46,
+      "trend": 2,
+      "sampleSize": 31,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 5.9, "l2": 3.4, "l3": 4.8, "l4": 3.7, "l5": 6.1 },
+      "topQuartileScore": 68,
+      "medianScore": 45,
+      "bottomQuartileScore": 28,
+      "geographicBreakdown": { "lagos": 48, "abuja": 51, "other": 39 }
+    },
+    {
+      "name": "FMCG / Consumer Goods",
+      "slug": "fmcg",
+      "score": 44,
+      "trend": 0,
+      "sampleSize": 56,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 5.8, "l2": 3.1, "l3": 4.2, "l4": 3.5, "l5": 5.4 },
+      "topQuartileScore": 65,
+      "medianScore": 43,
+      "bottomQuartileScore": 27,
+      "geographicBreakdown": { "lagos": 46, "abuja": 41, "other": 38 }
+    },
+    {
+      "name": "Manufacturing",
+      "slug": "manufacturing",
+      "score": 41,
+      "trend": 1,
+      "sampleSize": 48,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 5.1, "l2": 2.9, "l3": 4.1, "l4": 3.2, "l5": 5.8 },
+      "topQuartileScore": 62,
+      "medianScore": 40,
+      "bottomQuartileScore": 24,
+      "geographicBreakdown": { "lagos": 43, "abuja": 38, "other": 36 }
+    },
+    {
+      "name": "Logistics / Supply Chain",
+      "slug": "logistics",
+      "score": 39,
+      "trend": -2,
+      "sampleSize": 42,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 5.2, "l2": 2.8, "l3": 3.9, "l4": 3.3, "l5": 5.1 },
+      "topQuartileScore": 60,
+      "medianScore": 38,
+      "bottomQuartileScore": 22,
+      "geographicBreakdown": { "lagos": 41, "abuja": 36, "other": 33 }
+    },
+    {
+      "name": "Real Estate",
+      "slug": "real-estate",
+      "score": 38,
+      "trend": -1,
+      "sampleSize": 31,
+      "primaryConstraint": "L2",
+      "layerScores": { "l1": 4.9, "l2": 2.7, "l3": 3.8, "l4": 3.1, "l5": 4.9 },
+      "topQuartileScore": 58,
+      "medianScore": 37,
+      "bottomQuartileScore": 21,
+      "geographicBreakdown": { "lagos": 40, "abuja": 35, "other": 31 }
+    }
+  ],
+  "historicalTrend": [
+    { "edition": "Q4 2026", "score": 44, "date": "2026-12-01" }
+  ],
+  "sectorAdvisors": [
+    { "name": "[Name]", "sector": "Financial Services", "title": "[Title], [Institution]" },
+    { "name": "[Name]", "sector": "Technology", "title": "[Title], [Institution]" }
+  ]
+}
