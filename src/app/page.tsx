@@ -21,7 +21,7 @@ export default async function HomePage() {
       {/* 1. Hero Banner */}
       <section className="relative pt-32 pb-24 overflow-hidden flex flex-col items-center justify-center text-center min-h-[600px]">
         {/* Abstract Background element */}
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none z-0" />
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none z-0" style={{backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px)', backgroundSize: '24px 24px'}} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-b from-[var(--aehi-surface2)] to-transparent blur-[100px] rounded-full pointer-events-none z-0 opacity-50" />
         
         {/* Interactive Telemetry Mesh */}
