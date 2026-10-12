@@ -19,11 +19,10 @@ export function SiteNav({ currentEdition }: SiteNavProps) {
   }, []);
 
   const links = [
-    { name: 'Data', href: '/data' },
-    { name: 'Report', href: '/report' },
-    { name: 'Contribute', href: '/contribute' },
-    { name: 'Institutional', href: '/institutional' },
     { name: 'Methodology', href: '/methodology' },
+    { name: 'Contribute', href: '/contribute' },
+    { name: 'Inaugural report', href: '/report' },
+    { name: 'Partners', href: '/institutional' },
   ];
 
   return (
@@ -72,15 +71,16 @@ export function SiteNav({ currentEdition }: SiteNavProps) {
         {/* Right: CTA */}
         <div className="hidden lg:flex items-center gap-4">
           <Link 
-            href="/report" 
+            href="/contribute" 
             className="px-5 py-2.5 bg-[var(--aehi-lime)] text-[#050505] font-medium text-sm rounded-[10px] hover:bg-opacity-90 transition-all shadow-[0_0_15px_rgba(0,201,133,0.2)]"
           >
-            Download Report
+            Take part
           </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button 
+          aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
           className="lg:hidden text-white p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -104,11 +104,11 @@ export function SiteNav({ currentEdition }: SiteNavProps) {
             ))}
           </nav>
           <Link 
-            href="/report" 
+            href="/contribute" 
             className="w-full text-center py-3 bg-[var(--aehi-lime)] text-[#050505] font-medium rounded-lg"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Download Report
+            Take part
           </Link>
         </div>
       )}

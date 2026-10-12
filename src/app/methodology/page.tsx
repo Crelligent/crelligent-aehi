@@ -1,10 +1,9 @@
 import React from 'react';
 import { PageWrapper } from '@/components/layout/PageWrapper';
 import { MethodologyAccordion } from '@/components/ui/MethodologyAccordion';
-import { loadCurrentEdition } from '@/lib/aehi/loader';
+import { EDITION } from '@/data/edition';
 
-export default async function MethodologyPage() {
-  const data = await loadCurrentEdition();
+export default function MethodologyPage() {
 
   const sections = [
     {
@@ -19,7 +18,7 @@ export default async function MethodologyPage() {
             <li><strong>L4 (Data & Intelligence):</strong> The sensing layer, telemetry feeds, and analytical capabilities.</li>
             <li><strong>L5 (Governance):</strong> Risk management, compliance, and strategic control.</li>
           </ul>
-          <p>The index scores each layer out of 10. The overall OS Performance Score is an aggregate of these layer scores, weighted according to the sector's specific structural demands.</p>
+          
         </>
       )
     },
@@ -27,26 +26,21 @@ export default async function MethodologyPage() {
       title: 'Data Collection & Sampling',
       content: (
         <>
-          <p>The data for the {data.edition} edition is derived from a sample size of {data.sampleSize} mid-market enterprises operating in Nigeria. Data is collected through:</p>
+          <p>The inaugural {EDITION.label} edition is collecting data now. Data comes from:</p>
           <ol>
-            <li>Direct diagnostic assessments completed by C-suite executives via the Crelligent platform.</li>
-            <li>Anonymised telemetry from active ESRE OS installations managed by Crelligent.</li>
-            <li>Structured interviews and audits conducted by our institutional partners.</li>
+            <li>Diagnostic assessments completed by CEOs, founders and senior executives on the Crelligent platform.</li>
+            <li>Anonymised results from Crelligent client diagnostics, where clients consent.</li>
           </ol>
-          <p>To qualify for inclusion, an enterprise must have annual revenues exceeding ₦500M and employ a minimum of 20 full-time staff. Sectors are only represented if they have a statistically significant sample size (n {'>'}= 30).</p>
+          <p>The target population is Nigerian mid-market enterprises: typically 20 or more full-time staff and annual revenue above ₦500M. Each edition states its final sample size, how it was drawn and its limitations. A sector is only reported separately when it has enough responses to be meaningful; otherwise it is folded into a broader group.</p>
         </>
       )
     },
     {
-      title: 'Scoring & Quartile Thresholds',
+      title: 'Scoring',
       content: (
         <>
-          <p>Scores are normalized to a 100-point scale. The thresholds for the {data.edition} index are:</p>
-          <ul>
-            <li><strong>Top Quartile (Healthy):</strong> Score {data.topQuartileThreshold}–100. Enterprises exhibiting high systemic cohesion and minimal layer constraints.</li>
-            <li><strong>Middle Quartiles (At Risk):</strong> Score {data.bottomQuartileThreshold + 1}–{data.topQuartileThreshold - 1}. Enterprises with localized failures or friction in specific OS layers (most commonly L2 Operating Model).</li>
-            <li><strong>Bottom Quartile (Critical):</strong> Score 0–{data.bottomQuartileThreshold}. Enterprises experiencing systemic failure, high entropy, or fundamental misalignment between layers.</li>
-          </ul>
+          <p>Each of the five layers is scored out of 10 from the diagnostic answers. The layer scores combine into an OS Performance Score out of 100. The Operating Model (L2) carries the highest weight, because in Crelligent&apos;s experience it is the layer that most often holds an enterprise back; the index will test that assumption.</p>
+          <p>Score bands (healthy, at risk, critical) and quartile thresholds are set from the data once each edition&apos;s sample is complete, not in advance.</p>
         </>
       )
     },
@@ -57,7 +51,7 @@ export default async function MethodologyPage() {
           <p>All enterprise data is subjected to strict anonymisation protocols before aggregation:</p>
           <ul>
             <li>Company names, executive identities, and proprietary financial metrics are stripped from the dataset.</li>
-            <li>Data is aggregated strictly at the sector, geography, and revenue-band levels.</li>
+            <li>Results are only published in aggregate, by sector, location or revenue band.</li>
             <li>If a sector or sub-segment contains fewer than 5 enterprises, that data is merged into a broader category to prevent backward identification.</li>
           </ul>
         </>
@@ -66,7 +60,7 @@ export default async function MethodologyPage() {
   ];
 
   return (
-    <PageWrapper currentEdition={data.edition}>
+    <PageWrapper currentEdition={`Inaugural · ${EDITION.label}`}>
       <div className="max-w-4xl mx-auto px-6 pt-12 pb-24">
         
         <div className="mb-16">
@@ -77,7 +71,7 @@ export default async function MethodologyPage() {
             How the index is constructed.
           </h1>
           <p className="text-lg text-[var(--aehi-muted)] leading-relaxed">
-            The AEHI is an institutional-grade intelligence product. It is not an opinion survey. It measures the structural integrity of the enterprise operating system using the proprietary ESRE OS assessment framework.
+            The AEHI measures how well an enterprise is run, layer by layer, using Crelligent's ESRE OS assessment framework. This page sets out the method for the inaugural edition. We will publish any changes alongside each edition.
           </p>
         </div>
 

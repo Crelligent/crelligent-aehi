@@ -1,5 +1,5 @@
 // src/app/loading.tsx — AEHI homepage skeleton
-// Shown automatically by Next.js while loadCurrentEdition() resolves
+// Shown automatically by Next.js while a page loads
 
 export default function HomeLoading() {
   return (

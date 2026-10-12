@@ -9,9 +9,9 @@ const ibmPlexMono = IBM_Plex_Mono({ subsets: ["latin"], variable: "--font-mono",
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aehi.crelligent.com'),
-  title: 'African Enterprise Health Index (AEHI) · Q4 2026 | Crelligent',
-  description: 'The first systematic benchmark of enterprise operating health across the Nigerian mid-market. Q4 2026: Nigerian average 44/100. Published quarterly by Crelligent & Lagos Business School.',
-  openGraph: { type: 'website', siteName: 'African Enterprise Health Index (AEHI)', images: ['/og/aehi-q4-2026-og.png'] },
+  title: 'African Enterprise Health Index (AEHI) | Crelligent',
+  description: 'A quarterly benchmark of enterprise operating health across the Nigerian mid-market, scored across five layers from business design to governance. Inaugural edition in preparation; enterprises can take part now.',
+  openGraph: { type: 'website', siteName: 'African Enterprise Health Index (AEHI)' },
   twitter: { card: 'summary_large_image' },
 };
 
@@ -28,14 +28,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Dataset",
-              name: "African Enterprise Health Index Q4 2026",
-              description: "Quarterly benchmark of enterprise operating health across the Nigerian mid-market",
-              publisher: { "@type": "Organization", "name": "Crelligent & Company" },
-              datePublished: "2026-12-01",
-              temporalCoverage: "2026",
-              spatialCoverage: "Nigeria",
-              license: "https://aehi.crelligent.com/methodology#terms"
+              "@type": "ResearchProject",
+              name: "African Enterprise Health Index",
+              description: "Quarterly benchmark of enterprise operating health across the Nigerian mid-market. Inaugural edition in preparation.",
+              parentOrganization: { "@type": "Organization", "name": "Crelligent & Company", "url": "https://crelligent.com" },
+              areaServed: "Nigeria"
             })
           }}
         />

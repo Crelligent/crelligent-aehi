@@ -3,11 +3,10 @@ import Link from 'next/link';
 
 export function SiteFooter() {
   const links = [
-    { name: 'Data', href: '/data' },
-    { name: 'Report', href: '/report' },
-    { name: 'Contribute', href: '/contribute' },
-    { name: 'Institutional', href: '/institutional' },
     { name: 'Methodology', href: '/methodology' },
+    { name: 'Contribute', href: '/contribute' },
+    { name: 'Inaugural report', href: '/report' },
+    { name: 'Partners', href: '/institutional' },
     { name: 'Privacy Policy', href: 'https://crelligent.com/privacy' },
   ];
 
@@ -53,8 +52,7 @@ export function SiteFooter() {
         {/* Citation Line */}
         <div className="pt-8 border-t border-white/10 text-xs text-[var(--aehi-dim)] leading-relaxed">
           <p>
-            AEHI data may not be reproduced without attribution. Cite as: <br className="hidden sm:block" />
-            Crelligent ({new Date().getFullYear()}). African Enterprise Health Index, Q4 2026. Lagos: Crelligent & Company.
+            The African Enterprise Health Index is published by Crelligent &amp; Company Limited, Lagos. The inaugural edition is in preparation.
           </p>
         </div>
       </div>
